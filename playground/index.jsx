@@ -1,17 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import BraftEditor from '../src'
-import ColorPicker from 'braft-extensions/dist/color-picker'
-import Table from 'braft-extensions/dist/table'
-import CodeHighlighter from 'braft-extensions/dist/code-highlighter'
-import Emoticon, { defaultEmoticons } from 'braft-extensions/dist/emoticon'
+// import ColorPicker from 'braft-extensions/dist/color-picker'
+// import Table from 'braft-extensions/dist/table'
+// import CodeHighlighter from 'braft-extensions/dist/code-highlighter'
+// import Emoticon, { defaultEmoticons } from 'braft-extensions/dist/emoticon'
 
-import 'braft-extensions/dist/emoticon.css'
-import 'braft-extensions/dist/color-picker.css'
-import 'braft-extensions/dist/table.css'
-import 'braft-extensions/dist/code-highlighter.css'
+// import 'braft-extensions/dist/emoticon.css'
+// import 'braft-extensions/dist/color-picker.css'
+// import 'braft-extensions/dist/table.css'
+// import 'braft-extensions/dist/code-highlighter.css'
 
-const emoticons = defaultEmoticons.map(item => require(`braft-extensions/dist/assets/${item}`))
+// const emoticons = defaultEmoticons.map(item => require(`braft-extensions/dist/assets/${item}`))
 
 const hooks = {
   'set-image-alignment': () => {
@@ -19,16 +19,16 @@ const hooks = {
   }
 }
 
-BraftEditor.use([
-  Emoticon({
-    emoticons: emoticons
-  }),
-  // ColorPicker({
-  //   theme: 'dark'
-  // }),
-  Table(),
-  CodeHighlighter()
-])
+// BraftEditor.use([
+//   Emoticon({
+//     emoticons: emoticons
+//   }),
+//   // ColorPicker({
+//   //   theme: 'dark'
+//   // }),
+//   Table(),
+//   CodeHighlighter()
+// ])
 
 class Demo extends React.Component {
 
@@ -65,37 +65,7 @@ class Demo extends React.Component {
       <div>
         <div className="demo" id="demo">
           <BraftEditor
-            extendControls={[{
-              key: 'log-raw',
-              type: 'button',
-              text: 'Log RAW',
-              // disabled: true,
-              onClick: this.logRAW,
-            }, {
-              key: 'log-html',
-              type: 'button',
-              text: 'Log HTML',
-              // disabled: true,
-              onClick: this.logHTML,
-            }, {
-              key: 'my-modal',
-              type: 'modal',
-              text: 'modal',
-              // disabled: true,
-              modal: {
-                id: 'a',
-                closeOnBlur: true,
-                confirmable: true,
-                closeOnConfirm: false,
-                component: <div>123123</div>
-              }
-            }, {
-              key: 'my-dropdown',
-              type: 'dropdown',
-              text: 'Hello',
-              // disabled: true,
-              component: <h1>Hello World!</h1>
-            }]}
+            extendControls={[]}
             colors={['#e25041']}
             headings={['header-one', 'unstyled']}
             placeholder="Hello World!"
