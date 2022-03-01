@@ -1723,23 +1723,22 @@ braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-braft-convert@^2.3.0:
+"braft-convert@git+ssh://git@github.com:jsckdao/braft-convert.git#iframe":
   version "2.3.0"
-  resolved "https://registry.yarnpkg.com/braft-convert/-/braft-convert-2.3.0.tgz#27d5905136c334903d083b7a2352a72045627888"
-  integrity sha512-5km+dLHk8iYDv2iEYDrDQ2ld/ZoUx66QLql0qdm5PqZEcNXc8dBHGLORfzeu3iMw1jLeAiHxtdY5+ypuIhczVg==
+  resolved "git+ssh://git@github.com:jsckdao/braft-convert.git#138776cf58e8d1c11412dc9b48e2ea72c4d445d6"
   dependencies:
     draft-convert "^2.0.0"
     draft-js "^0.10.3"
 
-braft-finder@^0.0.19:
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/braft-finder/-/braft-finder-0.0.19.tgz#c324d82526ed3476a93de86cc9b407f4e188bc8d"
-  integrity sha512-0kzI6/KbomJJhYX1hpjn4edCKhblyUyWdUrsgBmOrwy0vrj+pPkm69+Uf8Uj6KGAULM6LF0ooC++p7fqUGgFHw==
+"braft-finder@git+ssh://git@github.com:jsckdao/braft-finder.git#iframe":
+  version "0.0.21"
+  resolved "git+ssh://git@github.com:jsckdao/braft-finder.git#220ce855e19cee7ead6c893651ce6ffc0ebbbbf0"
+  dependencies:
+    sass "^1.49.9"
 
-braft-utils@^3.0.8:
+"braft-utils@git+ssh://git@github.com:jsckdao/braft-utils.git#iframe":
   version "3.0.12"
-  resolved "https://registry.yarnpkg.com/braft-utils/-/braft-utils-3.0.12.tgz#2b755ce1d8397d96b627b6767f74d07f25729d85"
-  integrity sha512-O2cKysURNC4HSEMKgNmQ2RluwcrxvYrztlEmyPN5SzktiNX3vaLFQoo0Ez3PlIhvjaGrIBSIT2Oyh2N6mn6TFg==
+  resolved "git+ssh://git@github.com:jsckdao/braft-utils.git#7237a9c1ebb2d67deb199f8c0ede5cd9a4d89349"
 
 brorand@^1.0.1, brorand@^1.1.0:
   version "1.1.0"

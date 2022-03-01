@@ -19,17 +19,6 @@ const hooks = {
   }
 }
 
-// BraftEditor.use([
-//   Emoticon({
-//     emoticons: emoticons
-//   }),
-//   // ColorPicker({
-//   //   theme: 'dark'
-//   // }),
-//   Table(),
-//   CodeHighlighter()
-// ])
-
 class Demo extends React.Component {
 
   constructor(props) {
@@ -39,7 +28,7 @@ class Demo extends React.Component {
     this.state = {
       count: 0,
       readOnly: false,
-      editorState: BraftEditor.createEditorState('<p data-foo="adasd" class="my-classname"><img src="https://www.baidu.com/img/bd_logo1.png?where=super" /><span style="color:#e25041;">asdasdasda</span>asdads</p>')
+      editorState: BraftEditor.createEditorState('<p data-foo="adasd" class="my-classname"></p><div class="media-wrap image-wrap"><img src="https://www.baidu.com/img/bd_logo1.png?where=super"/></div><p><span style="color:#e25041">asdasdasda</span>asdads</p><p></p><p></p><div class="media-wrap iframe-wrap"><iframe src="https://create-react-app.dev/docs/proxying-api-requests-in-development/" frameBorder="0" style="width:100%"></iframe></div><p></p>')
     }
 
   }
@@ -65,7 +54,37 @@ class Demo extends React.Component {
       <div>
         <div className="demo" id="demo">
           <BraftEditor
-            extendControls={[]}
+            extendControls={[{
+              key: 'log-raw',
+              type: 'button',
+              text: 'Log RAW',
+              // disabled: true,
+              onClick: this.logRAW,
+            }, {
+              key: 'log-html',
+              type: 'button',
+              text: 'Log HTML',
+              // disabled: true,
+              onClick: this.logHTML,
+            }, {
+              key: 'my-modal',
+              type: 'modal',
+              text: 'modal',
+              // disabled: true,
+              modal: {
+                id: 'a',
+                closeOnBlur: true,
+                confirmable: true,
+                closeOnConfirm: false,
+                component: <div>123123</div>
+              }
+            }, {
+              key: 'my-dropdown',
+              type: 'dropdown',
+              text: 'Hello',
+              // disabled: true,
+              component: <h1>Hello World!</h1>
+            }]}
             colors={['#e25041']}
             headings={['header-one', 'unstyled']}
             placeholder="Hello World!"

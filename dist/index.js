@@ -6972,6 +6972,7 @@ editor_BraftEditor.createEditorState = external_draft_js_["EditorState"].createF
         editorState = external_draft_js_["EditorState"].createFrom(JSON.parse(content), options);
       }
     } catch (error) {
+      console.error('html convert error', error);
       editorState = Object(external_braft_convert_["convertHTMLToEditorState"])(content, getDecorators(options.editorId), options, 'create');
     }
   } else if (typeof content === 'number') {

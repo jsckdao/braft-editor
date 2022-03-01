@@ -7,7 +7,7 @@ export default {
     'superscript', 'subscript', 'remove-styles', 'emoji', 'separator',
     'text-indent', 'text-align', 'separator',
     'headings', 'list-ul', 'list-ol', 'blockquote', 'code', 'separator',
-    'media', 'link', 'table', 'split', 'hr', 'separator',
+    'media', 'iframe', 'link', 'table', 'split', 'hr', 'separator',
     'clear', 'separator',
     'fullscreen'
   ],
@@ -43,7 +43,8 @@ export default {
       audio: true,
       video: true,
       image: true,
-      embed: true
+      embed: true,
+      iframe: true
     },
   },
   imageControls: [

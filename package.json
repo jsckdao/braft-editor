@@ -62,9 +62,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
-    "braft-convert": "^2.3.0",
-    "braft-finder": "^0.0.19",
-    "braft-utils": "^3.0.8",
+    "braft-convert": "git+ssh://git@github.com:jsckdao/braft-convert.git#iframe",
+    "braft-finder": "git+ssh://git@github.com:jsckdao/braft-finder.git#iframe",
+    "braft-utils": "git+ssh://git@github.com:jsckdao/braft-utils.git#iframe",
     "draft-convert": "^2.0.0",
     "draft-js": "^0.10.3",
     "draft-js-multidecorators": "^1.0.0",
@@ -73,7 +73,7 @@
     "sass": "^1.49.9"
   },
   "peerDependencies": {
-    "react": "^15.0.2|| ^16.0.0-rc || ^16.0.0",
-    "react-dom": "^15.0.2|| ^16.0.0-rc || ^16.0.0"
+    "react": "^15.0.2|| ^16.0.0-rc || ^16.0.0 || ^17.0.0",
+    "react-dom": "^15.0.2|| ^16.0.0-rc || ^16.0.0 || ^17.0.0"
   }
 }
