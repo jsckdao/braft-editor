@@ -62,9 +62,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
-    "braft-convert": "git+ssh://git@github.com:jsckdao/braft-convert.git#iframe",
-    "braft-finder": "git+ssh://git@github.com:jsckdao/braft-finder.git#iframe",
-    "braft-utils": "git+ssh://git@github.com:jsckdao/braft-utils.git#iframe",
+    "braft-convert": "git+https://github.com/jsckdao/braft-convert.git#iframe",
+    "braft-finder": "git+https://github.com:jsckdao/braft-finder.git#iframe",
+    "braft-utils": "git+https://github.com:jsckdao/braft-utils.git#iframe",
     "draft-convert": "^2.0.0",
     "draft-js": "^0.10.3",
     "draft-js-multidecorators": "^1.0.0",
